@@ -5,17 +5,22 @@ from gambar import *
 import os
 
 lanjut = True
-os.system('clear')
-
 while lanjut:
+    os.system('clear')
     print("============")
     print("SHAPE MASTER!")
     print("============")
     print("Halo!")
     print("Shape Master adalah alat yang dapat membantumu menghitung geometri.")
     print("Saya akan membantu menghitung luas & keliling bangun datar dan volume & luas permukaan bangun ruang.")
-    Jenis_Bangun= input("Apa yang akan kita hitung kali ini? (bangun ruang / bangun datar): ").lower()
-    if Jenis_Bangun == "bangun datar":
+    print("")
+    jenisBangun= input("Apa yang akan kita hitung kali ini? (bangun ruang / bangun datar / quit): ").lower()
+    print("")
+    if jenisBangun == "quit" or jenisBangun == "q":
+        lanjut= False
+        break
+
+    elif jenisBangun == "bangun datar":
         print("""Berikut adalah daftarnya:
             1. Lingkaran
             2. Segitiga
@@ -24,51 +29,70 @@ while lanjut:
             5. Trapesium
             6. Jajar genjang
             7. Layang-layang
-            8. Belah ketupat""")
-        Bangun_datar= int(input("Nomor berapa yang anda pilih? (Tulis dengan angka): "))
-        if Bangun_datar == 1:
+            8. Belah ketupat
+            -------------------------------
+            9. Kembali ke menu sebelumnya
+            -------------------------------""")
+        bangunDatar= int(input("Nomor berapa yang anda pilih? (Tulis dengan angka): "))
+        if bangunDatar == 1:
             lingkaran()
             draw_lingkaran()
-        elif Bangun_datar == 2:
+        elif bangunDatar == 2:
             segitiga()
             draw_segitiga()
-        elif Bangun_datar == 3:
+        elif bangunDatar == 3:
             persegi()
-        elif Bangun_datar == 4:
+            draw_persegi()
+        elif bangunDatar == 4:
             persegi_panjang()
-        elif Bangun_datar == 5:
+            draw_PersegiPanjang()
+        elif bangunDatar == 5:
             trapesium()
-        elif Bangun_datar == 6:
+        elif bangunDatar == 6:
             jajargenjang()
-        elif Bangun_datar == 7:
+            draw_jajargenjang
+        elif bangunDatar == 7:
             layang_layang()
-        else:
+        elif bangunDatar == 8:
             belah_ketupat()
-
-    elif Jenis_Bangun == "bangun ruang":
+        else:
+            continue
+    elif jenisBangun == "bangun ruang":
         print("""Berikut adalah daftarnya:
             1. Tabung
             2. Bola
             3. Kerucut
             4. Balok
             5. Kubus
-            6. Limas""")
-        Bangun_ruang= int(input("Nomor berapa yang anda pilih? (Tulis dengan angka): "))
-        if Bangun_ruang == 1:
+            6. Limas
+            -------------------------------
+            7. Kembali ke menu sebelumnya
+            -------------------------------""")
+        bangunRuang= int(input("Nomor berapa yang anda pilih? (Tulis dengan angka): "))
+        if bangunRuang == 1:
             tabung()
-        elif Bangun_ruang == 2:
+        elif bangunRuang == 2:
             bola()
-        elif Bangun_ruang == 3:
+        elif bangunRuang == 3:
             kerucut()
-        elif Bangun_ruang == 4:
+        elif bangunRuang == 4:
             balok()
-        elif Bangun_ruang == 5:
+        elif bangunRuang == 5:
             kubus()
-        else:
+        elif bangunRuang == 6:
             limas()
-            
+        else:
+            continue
+    else:
+        print("!!!!!!!!!!!!")
+        print("Pilih lagi!")
+        print("!!!!!!!!!!!!")
+    
+    print("")
     jawab = input("Mau tanya lagi? (Ya/Tidak): ").lower()
     lanjut = (jawab == "ya")
 
 
+print("")
 print("Baiklah! Sampai jumpa!! ^^")
+print("")

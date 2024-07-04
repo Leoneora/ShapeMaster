@@ -4,80 +4,82 @@ import math
 #Bangun ruang:
 
 def tabung():
-    r= int(input("Berapa jari-jari alas/tutup tabung?: "))
-    t= int(input("Berapa tinggi tabung?: "))
+    jariJari= int(input("Berapa jari-jari alas/tutup tabung?: "))
+    tinggi= int(input("Berapa tinggi tabung?: "))
     phi= 22/7
-    Volume= phi*r*r*t
-    A= 2*phi*r(r+t)
-    print(f"Volume tabung= {Volume}")
-    print(f"Luas Permukaan tabung= {A}")
+    volume= phi*(jariJari*jariJari)*tinggi
+    luasPermukaan= 2*phi*jariJari*(jariJari+tinggi)
+    volume= round(volume,2)
+    luasPermukaan= round(luasPermukaan,2)
+    print(f"Volume tabung= {volume}")
+    print(f"Luas Permukaan tabung= {luasPermukaan}")
 
 def bola():
-    r= int(input("Berapa jari-jari bola?: "))
+    jariJari= int(input("Berapa jari-jari bola?: "))
     phi= 22/7
-    Volume= 4/3*phi*r*r*r
-    A= 4*phi*r*r
-    print(f"Volume bola= {Volume}")
-    print(f"Luas Permukaan bola= {A}")
+    volume= 4/3*phi*jariJari*jariJari*jariJari
+    luasPermukaan= 4*phi*jariJari*jariJari
+    print(f"Volume bola= {volume}")
+    print(f"Luas Permukaan bola= {luasPermukaan}")
     
 def kerucut():
-    r= int(input("Berapa jari-jari alas kerucut?: "))
-    t= int(input("Berapa tinggi kerucut?: "))
-    s= int(input("Berapa garis pelukis kerucut?: "))
+    jariJari= int(input("Berapa jari-jari alas kerucut?: "))
+    tinggi= int(input("Berapa tinggi kerucut?: "))
+    garisPelukis= int(input("Berapa garis pelukis kerucut?: "))
     phi= 22/7
-    Volume= 1/3*phi*r*r*t
-    A= phi*r*(r+s)
-    print(f"Volume kerucut= {Volume}")
-    print(f"Luas Permukaan kerucut= {A}")
+    volume= 1/3*phi*jariJari*jariJari*tinggi
+    luasPermukaan= phi*jariJari*(jariJari+garisPelukis)
+    print(f"Volume kerucut= {volume}")
+    print(f"Luas Permukaan kerucut= {luasPermukaan}")
 
 def balok():
-    p= int(input("Berapa panjang balok?: "))
-    l= int(input("Berapa lebar balok?: "))
-    t= int(input("Berapa tinggi balok?: "))
-    Volume= p*l*t
-    A= 2*(p*l+l*t+t*p)
-    print(f"Volume balok= {Volume}")
-    print(f"Luas Permukaan balok= {A}")
+    panjang= int(input("Berapa panjang balok?: "))
+    lebar= int(input("Berapa lebar balok?: "))
+    tinggi= int(input("Berapa tinggi balok?: "))
+    volume= panjang*lebar*tinggi
+    luasPermukaan= 2*(panjang*lebar + lebar*tinggi + tinggi*panjang)
+    print(f"Volume balok= {volume}")
+    print(f"Luas Permukaan balok= {luasPermukaan}")
 
 def kubus():
-    s= int(input("Berapa sisi kubus?: "))
-    Volume= s*s*s
-    A= 6*s*s
-    print(f"Volume kubus= {Volume}")
-    print(f"Luas Permukaan kubus= {A}")
+    sisi= int(input("Berapa sisi kubus?: "))
+    volume= sisi**3
+    luasPermukaan= 6 * sisi**2
+    print(f"Volume kubus= {volume}")
+    print(f"Luas Permukaan kubus= {luasPermukaan}")
 
 def limas():
     jenis = input("Apakah jenis limasnya? (segitiga/segiempat): ").lower()
     if jenis == "segitiga":
         # Input untuk limas segitiga
         alas = float(input("Masukkan panjang alas segitiga: "))
-        tinggi_alas = float(input("Masukkan tinggi alas segitiga: "))
-        tinggi_limas = float(input("Masukkan tinggi limas: "))
+        tinggiAlas = float(input("Masukkan tinggi alas segitiga: "))
+        tinggiLimas = float(input("Masukkan tinggi limas: "))
         
         # Menghitung luas alas dan volume
-        luas_alas = 0.5 * alas * tinggi_alas
-        volume = (1/3) * luas_alas * tinggi_limas
+        luasAlas = 0.5 * alas * tinggiAlas
+        volume = (1/3) * luasAlas * tinggiLimas
         
         # Menghitung luas permukaan
-        sisi_miring = math.sqrt((alas / 2)**2 + tinggi_limas**2)
-        luas_permukaan = luas_alas + 3 * (0.5 * alas * sisi_miring)
+        sisiMiring = math.sqrt((alas / 2)**2 + tinggiLimas**2)
+        luasPermukaan = luasAlas + 3 * (0.5 * alas * sisiMiring)
         
     elif jenis == "segiempat":
         # Input untuk limas segiempat
-        sisi_alas = float(input("Masukkan panjang sisi alas persegi: "))
-        tinggi_limas = float(input("Masukkan tinggi limas: "))
+        sisiAlas = float(input("Masukkan panjang sisi alas persegi: "))
+        tinggiLimas = float(input("Masukkan tinggi limas: "))
         
         # Menghitung luas alas dan volume
-        luas_alas = sisi_alas ** 2
-        volume = (1/3) * luas_alas * tinggi_limas
+        luasAlas = sisiAlas ** 2
+        volume = (1/3) * luasAlas * tinggiLimas
         
         # Menghitung luas permukaan
-        sisi_miring = math.sqrt((sisi_alas / 2)**2 + tinggi_limas**2)
-        luas_permukaan = luas_alas + 4 * (0.5 * sisi_alas * sisi_miring)
+        sisiMiring = math.sqrt((sisiAlas / 2)**2 + tinggiLimas**2)
+        luasPermukaan = luasAlas + 4 * (0.5 * sisiAlas * sisiMiring)
     
     else:
         print("Jenis limas tidak valid. Masukkan 'segitiga' atau 'segiempat'.")
         return
     
-    print(f"Luas permukaan limas {jenis}: {luas_permukaan}")
+    print(f"Luas permukaan limas {jenis}: {luasPermukaan}")
     print(f"Volume limas {jenis}: {volume}")

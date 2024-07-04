@@ -73,4 +73,16 @@ def draw_jajargenjang():
     hideturtle()
     exitonclick()
 
+def draw_belah_ketupat():
+    pensize(2)
+    color("black")
+    right(60)
+    for i in range(2):
+        forward(100)
+        right(60)
+        forward(100)
+        right(120)
+    hideturtle()
+    exitonclick()
+
 #Gambar bangun ruang
