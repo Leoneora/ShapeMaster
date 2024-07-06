@@ -49,27 +49,18 @@ def draw_trapesium_sama_kaki():
     hideturtle()
     exitonclick()
 
-def draw_trapesium_sikusiku():
-    pensize(2)
-    forward(100)
-    right(60)
-    forward(80)
-    right(120)
-    forward(140)
-    right(90)
-    forward(70)
-    hideturtle()
-    exitonclick()
-
 def draw_jajargenjang():
+    penup()
+    goto(-100,0)
+    pendown()
     pensize(2)
-    forward(100)
+    forward(300)
     right(60)
-    forward(70)
+    forward(100)
     right(120)
-    forward(70)
-    right(120)
-    forward(70)
+    forward(300)
+    right(60)
+    forward(100)
     hideturtle()
     exitonclick()
 
@@ -85,4 +76,21 @@ def draw_belah_ketupat():
     hideturtle()
     exitonclick()
 
-#Gambar bangun ruang
+def draw_layangLayang():
+    pensize(2)
+    color("black")
+    penup()
+    goto(-10,100)
+    pendown()
+    right(50)
+    forward(120)
+    right(60)
+    forward(200)
+    right(136)
+    forward(200)
+    right(60)
+    forward(120)
+    hideturtle()
+    exitonclick()
+draw_layangLayang()
+#Gambar bangun ruang tidak di buat

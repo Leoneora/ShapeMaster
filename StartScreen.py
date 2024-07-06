@@ -14,9 +14,9 @@ while lanjut:
     print("Shape Master adalah alat yang dapat membantumu menghitung geometri.")
     print("Saya akan membantu menghitung luas & keliling bangun datar dan volume & luas permukaan bangun ruang.")
     print("")
-    jenisBangun= input("Apa yang akan kita hitung kali ini? (bangun ruang / bangun datar / quit): ").lower()
+    jenisBangun= input("Apa yang akan kita hitung kali ini? (bangun ruang / bangun datar / (q)uit): ").lower()
     print("")
-    if jenisBangun == "quit" or jenisBangun == "q":
+    if jenisBangun == "quit" or jenisBangun == "q": #Menghentikan program jika mengetik "quit"
         lanjut= False
         break
 
@@ -83,13 +83,14 @@ while lanjut:
             limas()
         else:
             continue
-    else:
-        print("!!!!!!!!!!!!")
+    else:           #Ketika pengguna memasukan informasi tidak sesuai kriteria
+        print("!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+        print("Tidak ada di dalam daftar!")
         print("Pilih lagi!")
-        print("!!!!!!!!!!!!")
+        print("!!!!!!!!!!!!!!!!!!!!!!!!!!!")
     
     print("")
-    jawab = input("Mau tanya lagi? (Ya/Tidak): ").lower()
+    jawab = input("Mau tanya lagi? (Ya/Tidak): ").lower() #Mengulang program dari atas
     lanjut = (jawab == "ya")
 
 
