@@ -11,8 +11,17 @@ def tabung():
     luasPermukaan= 2 * phi * jariJari * (jariJari + tinggi)
     volume= round(volume,2)
     luasPermukaan= round(luasPermukaan,2)
+    print("")
+    print("------------------------------------------------------")
     print(f"Volume tabung= {volume}")
     print(f"Luas Permukaan tabung= {luasPermukaan}")
+    print("")
+    print("""Sifat-sifat Tabung:
+          1. Memiliki dua sisi berbentuk lingkaran yang sejajar dan sama besar (alas dan tutup).
+          2. Memiliki satu sisi lengkung yang menghubungkan kedua sisi lingkaran.
+          3. Tidak memiliki titik sudut.""")
+    print("------------------------------------------------------")
+    print("")
 
 def bola():
     jariJari= int(input("Berapa jari-jari bola?: "))
@@ -21,8 +30,18 @@ def bola():
     luasPermukaan= 4* phi * jariJari * jariJari
     volume= round(volume,2)
     luasPermukaan= round(luasPermukaan,2)
+    print("")
+    print("------------------------------------------------------")
     print(f"Volume bola= {volume}")
     print(f"Luas Permukaan bola= {luasPermukaan}")
+    print("")
+    print("""Sifat-sifat Bola:
+          1. Semua titik pada permukaan bola berjarak sama dari pusat bola.
+          2. Tidak memiliki sisi datar.
+          3. Tidak memiliki rusuk atau titik sudut.""")
+    print("------------------------------------------------------")
+    print("")
+
     
 def kerucut():
     jariJari= int(input("Berapa jari-jari alas kerucut?: "))
@@ -34,8 +53,15 @@ def kerucut():
     volume= round(volume,2)
     luasPermukaan= round(luasPermukaan,2)
     print("")
+    print("------------------------------------------------------")
     print(f"Volume kerucut= {volume}")
     print(f"Luas Permukaan kerucut= {luasPermukaan}")
+    print("")
+    print("""Sifat-sifat Kerucut:
+          1. Memiliki satu alas berbentuk lingkaran.
+          2. Memiliki satu titik puncak yang tidak terletak pada alas.
+          3. Memiliki satu sisi lengkung dan satu sisi datar (alas).<br>4. Memiliki satu rusuk lengkung.""")
+    print("------------------------------------------------------")
     print("")
 
 def balok():
@@ -47,8 +73,15 @@ def balok():
     volume= round(volume,2)
     luasPermukaan= round(luasPermukaan,2)
     print("")
+    print("------------------------------------------------------")
     print(f"Volume balok= {volume}")
     print(f"Luas Permukaan balok= {luasPermukaan}")
+    print("""Sifat-sifat Balok:
+          1. Memiliki enam sisi berbentuk persegi panjang.
+          2. Setiap sisi yang berhadapan sama besar.
+          3. Memiliki 12 rusuk yang terdiri dari tiga pasang rusuk yang masing-masing pasangannya sama panjang.
+          4. Memiliki 8 titik sudut.""")
+    print("------------------------------------------------------")
     print("")
 
 def kubus():
@@ -58,9 +91,16 @@ def kubus():
     volume= round(volume,2)
     luasPermukaan= round(luasPermukaan,2)
     print("")
+    print("------------------------------------------------------")
     print(f"Volume kubus= {volume}")
     print(f"Luas Permukaan kubus= {luasPermukaan}")
     print("")
+    print("""Sifat-sifat Kubus:
+          1. Memiliki enam sisi berbentuk persegi yang sama besar.
+          2. Semua rusuknya sama panjang.
+          3. Memiliki 12 rusuk.
+          4. Memiliki 8 titik sudut.""")
+    print("------------------------------------------------------")
 
 def limas():
     jenis = input("Apakah jenis limasnya? (segitiga/segiempat): ").lower()
@@ -101,6 +141,16 @@ def limas():
         print("Jenis limas tidak valid. Masukkan 'segitiga' atau 'segiempat'.")
         return
     print("")
+    print("------------------------------------------------------")
     print(f"Luas permukaan limas {jenis}: {luasPermukaan}")
     print(f"Volume limas {jenis}: {volume}")
     print("")
+    print("""Sifat-sifat Limas:
+          1. Memiliki satu alas yang berbentuk segi-n (segitiga, segi empat, dll).
+          2. Memiliki titik puncak yang tidak terletak pada alas.
+          3. Jumlah sisi tegaknya sesuai dengan jumlah sisi pada alasnya.
+          4. Memiliki sejumlah rusuk yang sama dengan jumlah sisi alas + 1.
+          5. Memiliki jumlah titik sudut yang sama dengan jumlah titik sudut alas + 1.""")
+    print("------------------------------------------------------")
+    print("")
+    

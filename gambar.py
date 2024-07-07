@@ -92,5 +92,5 @@ def draw_layangLayang():
     forward(120)
     hideturtle()
     exitonclick()
-draw_layangLayang()
+
 #Gambar bangun ruang tidak di buat

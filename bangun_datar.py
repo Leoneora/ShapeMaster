@@ -16,8 +16,15 @@ def lingkaran():
     luas= round(luas,2)
     keliling= round(keliling,2)
     print("")
+    print("------------------------------------------------------")
     print(f"Keliling lingkaran= {keliling}")
     print(f"Luas lingkaran= {luas}")
+    print("")
+    print("""Sifat-sifat Lingkaran:
+          1. Tidak memiliki sudut
+          2. Semua titik pada lingkaran berjarak sama dari pusat
+          3. Memiliki diameter dan jari-jari""")
+    print("------------------------------------------------------")
     print("")
 
 #Perhitungan Luas dan Keliling Segitiga
@@ -29,8 +36,15 @@ def segitiga():
     luas= round(luas,2)
     keliling= round(keliling,2)
     print("")
+    print("------------------------------------------------------")
     print(f"Keliling segitiga= {keliling}")
     print(f"Luas segitiga= {luas}")
+    print("")
+    print("""Sifat-sifat Segitiga:
+          1. Memiliki tiga sisi dan tiga sudut
+          2. Jumlah sudutnya 180 derajat
+          3. Jenis: segitiga sama sisi, sama kaki, sembarang""")
+    print("------------------------------------------------------")
     print("")
 
 #Perhitungan Luas dan Keliling Persegi
@@ -41,8 +55,15 @@ def persegi():
     luas= round(luas,2)
     keliling= round(keliling,2)
     print("")
+    print("------------------------------------------------------")
     print(f"Keliling persegi= {keliling}")
     print(f"Luas persegi= {luas}")
+    print("")
+    print("""Sifat-sifat Persegi:
+          1. Memiliki empat sisi yang sama panjang
+          2. Memiliki empat sudut siku-siku (90 derajat)
+          3. Diagonalnya sama panjang dan saling membagi dua sama panjang""")
+    print("------------------------------------------------------")
     print("")
 
 #Perhitungan Luas dan Keliling Persegi Panjang
@@ -54,8 +75,15 @@ def persegi_panjang():
     luas= round(luas,2)
     keliling= round(keliling,2)
     print("")
+    print("------------------------------------------------------")
     print(f"Keliling persegi panjang= {keliling}")
     print(f"Luas persegi panajng= {luas}")
+    print("")
+    print("""Sifat-sifat Persegi Panjang:
+          1. Memiliki empat sisi, sisi yang berhadapan sama panjang
+          2. Memiliki empat sudut siku-siku (90 derajat)
+          3. Diagonalnya sama panjang dan saling membagi dua sama panjang""")
+    print("------------------------------------------------------")
     print("")
 
 #Perhitungan Luas dan Keliling Trapesium
@@ -69,8 +97,15 @@ def trapesium():
     luas= round(luas,2)
     keliling= round(keliling,2)
     print("")
+    print("------------------------------------------------------")
     print(f"Keliling trapesium= {keliling}")
     print(f"Luas trapesium= {luas}")
+    print("")
+    print("""Sifat-sifat Trapesium:
+          1. Memiliki sepasang sisi sejajar
+          2. Jenis: trapesium sama kaki, siku-siku, sembarang
+          3. Jumlah sudutnya 360 derajat)
+    print("------------------------------------------------------""")
     print("")
     draw_trapesium_sama_kaki()
 
@@ -84,8 +119,15 @@ def jajargenjang():
     luas= round(luas,2)
     keliling= round(keliling,2)
     print("")
+    print("------------------------------------------------------")
     print(f"Keliling jajargenjang= {keliling}")
     print(f"Luas jajargenjang= {luas}")
+    print("")
+    print("""Sifat-sifat Jajargenjang:
+          1. Memiliki dua pasang sisi yang sejajar dan sama panjang
+          2. Sudut-sudut yang berhadapan sama besar
+          3. Diagonalnya saling membagi dua tetapi tidak sama panjang""")
+    print("------------------------------------------------------")
     print("")
 
 #Perhitungan Luas dan Keliling Layang-layang
@@ -99,8 +141,15 @@ def layang_layang():
     luas= round(luas,2)
     keliling= round(keliling,2)
     print("")
+    print("------------------------------------------------------")
     print(f"Keliling layang-layang= {keliling}")
     print(f"Luas layang-layang= {luas}")
+    print("")
+    print("""Sifat-sifat Layang-layang:
+          1. Memiliki dua pasang sisi yang sejajar dan sama panjang
+          2. Sudut-sudut yang berhadapan sama besar
+          3. Diagonalnya saling membagi dua tetapi tidak sama panjang""")
+    print("------------------------------------------------------")
     print("")
 
 #Perhitungan Luas dan Keliling Belah Ketupat
@@ -113,6 +162,13 @@ def belah_ketupat():
     luas= round(luas,2)
     keliling= round(keliling,2)
     print("")
+    print("------------------------------------------------------")
     print(f"Keliling belah ketupat= {keliling}")
     print(f"Luas belah ketupat= {luas}")
+    print("")
+    print("""Sifat-sifat Belah Ketupat:
+          1. Semua sisi sama panjang
+          2. Memiliki dua pasang sudut yang berseberangan sama besar
+          3. Diagonalnya saling membagi dua dan saling tegak lurus""")
+    print("------------------------------------------------------")
     print("")
