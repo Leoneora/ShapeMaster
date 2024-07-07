@@ -1,4 +1,5 @@
 #Tampilan awal
+#File StartScreen.py akan memanggil fungsi dari file lain. Dibuat oleh E. Keisha P.
 from bangun_datar import *
 from bangun_ruang import *
 from gambar import *
