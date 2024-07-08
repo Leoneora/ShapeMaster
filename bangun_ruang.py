@@ -76,6 +76,7 @@ def balok():
     print("------------------------------------------------------")
     print(f"Volume balok= {volume}")
     print(f"Luas Permukaan balok= {luasPermukaan}")
+    print("")
     print("""Sifat-sifat Balok:
           1. Memiliki enam sisi berbentuk persegi panjang.
           2. Setiap sisi yang berhadapan sama besar.
