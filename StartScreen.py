@@ -17,7 +17,7 @@ while lanjut:
     print("")
     jenisBangun= input("Apa yang akan kita hitung kali ini? (bangun ruang / bangun datar / (q)uit): ").lower()
     print("")
-    if jenisBangun == "quit" or jenisBangun == "q": #Menghentikan program jika mengetik "quit"
+    if jenisBangun == "quit" or jenisBangun == "q": #Menghentikan program jika mengetik "quit". Menghentikan program
         lanjut= False
         break
 
