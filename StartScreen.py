@@ -54,8 +54,10 @@ while lanjut:
             draw_jajargenjang
         elif bangunDatar == 7:
             layang_layang()
+            draw_layangLayang()
         elif bangunDatar == 8:
             belah_ketupat()
+            draw_belah_ketupat()
         else:
             continue
     elif jenisBangun == "bangun ruang":
