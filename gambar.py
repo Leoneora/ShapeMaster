@@ -1,4 +1,4 @@
-#File "gambar.py" untuk kumpulan def() atau fungsi yang akan menggambar bangun datar dan bangun ruang yang akan dipanggil.
+#File "gambar.py" untuk kumpulan def() atau fungsi yang akan menggambar bangun datar yang akan dipanggil.
 #dibuat oleh E. Keisha P.
 
 from turtle import *
